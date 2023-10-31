@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    let a=[1,2,3,4,5]
+    //    console.log(a);
+
+    //     //  update value
+    //    a[2]="sowmya";
+    //    console.log(a);
+
+    // array methods
+    // a=[1,2,3,4,5,6]
+//  arrary length            console.log(a.length);
+
+// //   to string       
+//                           console.log(a.toString());
+//                           console.log(String(a));
+
+// to number          
+                    //      console.log(Number([a]));
+                    //      console.log(Number([12]));
+                    //      console.log(Number([12.4]));
+                    //      console.log(a);
+
+//   Boolean  
+                //           console.log(Boolean());
+                //           console.log(Boolean([]));               
+
+//   pop  remove last value             
+                    //         console.log(a.pop());
+                    //         console.log(a);
+
+                    //          console.log(a.pop());
+                    //         console.log(a);  
+//                              console.log(a.pop(2));
+//                              console.log(a);
+                    
+// //  push                
+//                              console.log(a.push(7));  
+//                              console.log(a);
+//                              console.log(a.push(8,9,10)); 
+//                              console.log(a);
+
+// shift remove first valuse
+//                             console.log(a.shift(2));
+//                             console.log(a);
+
+// // unshift    
+//                              console.log(a.unshift(2,4,6,1));
+//                              console.log(a);
+
+// join 
+                       // console.log(a.join([" "]));
+                       // console.log(a.join([","]));
+                       // console.log(a.join(["/"]));
+
+// splice
+//                                   console.log(a);
+//                                   console.log(a.splice(1,1,10));
+                                //   console.log(a);
+                                //   console.log(a.splice(1,3,10));
+                                //   console.log(a);
+//                                   console.log(a.splice(1,0,10,));
+//                                   console.log(a);
+//                                   console.log(a.splice(1,0,10,11,12,13));
+//                                   console.log(a);
+
+// 00000000000000000000000000000000000000000000000000000000000000000000
+
+// task 1 print strings indiviually using  index values
+
+// a=["chaitanya",2,"kumar",4,"kumari"]
+
+//  for(i=0;i<a[0].length;i++) {
+//     if(i%2==0)
+//     console.log(a[0][i]);
+//  }
+
+//  for(i=0;i<a[2].length;i++) {
+//     if(i%2==0)
+//     console.log(a[2][i]);
+//  }
+ 
+//  for(i=0;i<a[4].length;i++) {
+//     if(i%2==0)
+//     console.log(a[4][i]);
+//  }
+
+// 0000000000000000000000000000000000000000000000000000000000000000000000000
+ 
+// task 1  print even index characters
+
+// a=["chaitanya",2,"kumar",4,"kumari"]
+//    for(i=0;i<a.length;i++){
+//     if(i%2==0){
+//         console.log(a[i]);
+//     }
+//    }
+
+//    000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+//  length of each index got in string
+
+// let aa=["chaitanya","2","kumar","4","kumari"]
+// let b=[]
+
+// console.log(b+[1]);
+//  for(i=0;i<aa.length;i++){
+//     console.log((aa[i].length));
+   
+//      b.push(aa[i].length)
+
+//  }
+//  console.log((b));
+//  console.log()
+ 
+
+// 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+// vowels letter in Array print  
+
+ let a=["[chaitanya]","2","[kumar]","4","kumari"];
+ let b1=[];
+ for(i=0;i<a.length;i++){
+    for(j=0;j<a[i].length;j++){
+        if( a[i][j]=="a" || a[i][j]=="e" || a[i][j]=="i" || a[i][j]=="o" || a[i][j]=="u" ){
+            b1.push(a[i][j]);
+            console.log(a[i][j]);
+        }
+    }
+ }
+console.log(b1);
+
+// 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+// 19/10/2023
+
+// multi dimendion arrary to single dimension
+
+//1. Flat0000000000000000000000000000000000000000000000
+
+// a=[[1,2,3],4,5,6,[7,8,9]];
+// console.log(a.flat());
+  
+// 2.sort (arranging numbers in order)00000000000000000000000000000000000
+
+// a=[1,5,8,2,6,0,4,3];
+// console.log(a.sort());
+
+// aa=[1,50,18,22,63,0,54,43];
+
+// console.log(aa.sort(sort));
+// function sort(a,b){
+//     return a-b ;
+// }
+
+// 3. concat(adding number to arrray)00000000000000000000000000000000000
+
+// a=[1,5,8,2,6,0,4,3];
+// console.log(a.concat(60));
+
+// 4.slice 000000000000000000000000000000000000000000
+// a=[1,5,8,2,6,0,4,3];
+// console.log(a.slice(1,5));
+
+                                         // arrart iteration function 
+
+
+// 1.forEach(gives new arrary but function doesnot writes)0000000000000000000000000000000
+
+// a=[1,2,3,4,5,6];
+// console.log(a.forEach(callback));
+// function callback(value,index,array) {
+//     console.log(value,"value");
+//     console.log(index,"index");
+//     console.log(array,"array");
+    
+// }
+
+// 2.map(gives new arrary and writes the returm values but does not accept the condition)0000000000000000000000000000000000000
+
+// a=[1,2,3,4,5,6];
+// console.log(a.map(callback));
+// function callback(value,index,array){
+//     // return value;
+//     return index;
+// }
+
+// 3.filter(accept condition also,display output of "value" values)0000000000000000000000000000000000000000000000000000000000000
+
+// a=[12,12,16,24,10,26];
+//  console.log(a.filter(callback));
+//  function callback(value,index,array){
+//     //  return value;
+//      return index%2==0;
+//  }
+
+// 4.reduce( sum and muitiplication of arrary)000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+// a=[1,2,3,4,5,6];
+// console.log(a.reduce(callback));
+// function callback(total,a,v,c){
+//     // return total+a;   (sum of arrary)
+//      return total *a;   // (multiplication of arrary)
+
+// }
+
+// 5.every(condition check every value and give boolean values)00000000000000000000000000000000000000000000000000000
+
+//  a=[1,2,3,4,5,6];
+//  console.log(a.every(callback));
+//  function callback(a,b,c){
+//     // return a>9; (values)
+//     return b<9;     (index)
+//  }
+
+
+// 6.some(condition check any one value is true is ok and give boolean values)00000000000000000000000000000000000000000000000000000
+
+//  a=[1,2,3,4,5,6];
+//  console.log(a.some(callback));
+//  function callback(a,b,c){
+//     // return a>5; (values)
+//     return b<1;     (index)
+//  }
+
+// 7.find(find valus in array if there are multiple of same vlaue print first one)0000000000000000000000000000000000000000000000000000000000000000000000000000
+
+// let aa=[7,6,2,3,4,5,6,7];
+// let b=(aa.find(callback));
+// function callback(a,b,c){
+    
+//     return a>2;     print highest value
+// }
+// console.log(b);
+
+
+// 8. index and last index
+
+let aa=[7,6,2,3,4,5,6,7,8];
+// console.log(aa.indexOf(7));
+// console.log(aa.lastIndexOf(7));
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
